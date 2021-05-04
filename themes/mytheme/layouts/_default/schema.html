@@ -1,0 +1,17 @@
+<div class="container schema-popup">
+    <div class="row justify-content-center">
+        <div class="col">
+            <h2>{{ .Title | upper }}</h2>
+
+            {{ $currentPage := . }}
+
+            {{ with .Params.schema }}
+                {{ $image := $.Resources.GetMatch . }}
+                <img src="{{ $image.RelPermalink }}" class="img-fluid pb-4" alt="{{ $currentPage.Title }}">
+            {{ end }}
+            {{ with .Params.legend }}
+                {{ with $.Resources.GetMatch . }}{{ .Content }}{{ end }}
+            {{ end }}
+        </div>
+    </div>
+</div>

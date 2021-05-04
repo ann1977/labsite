@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<div class="container pb-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-3">
+            <ul class="fa-ul">
+                <li class="pb-2"><span class="fa-li"><i class="fa fa-map-marker"></i></span>
+                    <div>
+                        {{ $counter := 0 }}
+                        {{ range .Page.Params.address }}
+                            {{ if ne $counter 0 }}<br>{{ end }}
+                            {{ . }}
+                            {{ $counter = add $counter 1 }}
+                        {{ end }}
+                    </div>
+                </li>
+                <li class="pb-2"><span class="fa-li"><i class="fa fa-envelope-o"></i></span>
+                    <a href="mailto:{{ .Page.Params.email }}">{{ .Page.Params.email }}</a>
+                </li>
+                <li class="pb-2"><span class="fa-li"><i class="fa fa-phone"></i></span>
+                    {{ .Page.Params.phone }}
+                </li>
+                <li class="pb-2"><span class="fa-li"><i class="fa fa-user-o"></i></span>
+                    {{ .Page.Params.contact }}
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-6">
+            <div class="embed-responsive" style="height: 400px;">
+                {{ if .Site.Params.contacts.map.yandex }}
+                <iframe src="https://yandex.ru/map-widget/v1/-/CCUYQBd3wB"></iframe>
+                {{ else }}
+                <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=37.50979185104371%2C55.70419291679782%2C37.52405047416688%2C55.709059104420014&amp;layer=mapnik&amp;marker=55.70662306388343%2C37.516915798187256"></iframe>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ end }}

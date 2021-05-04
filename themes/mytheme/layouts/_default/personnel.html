@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+{{ $currentPage := . }}
+
+<div class="container pb-5">
+{{ with .Page.Params.personnel }}
+    {{ $counter := 1 }}
+    {{ range . }}
+        {{ $pos := mod $counter 2 }}
+        {{ if ne $counter 1 }}
+            <hr class="divider">
+        {{ end }}
+        <div class="row justify-content-center">
+            <div class="col-md-6 order-md-{{ if eq $pos 1 }}1{{ else }}2{{ end }}">
+                {{ $image := $currentPage.Resources.GetMatch .image }}
+                <img src="{{ $image.RelPermalink}}" class="{{ if eq $pos 1 }}float-md-right{{ end }} rounded-circle" alt="{{ .name }}">
+            </div>
+            <div class="col-md-6 order-md-{{ if eq $pos 1 }}2{{ else }}1 text-md-right{{ end }}">
+                <a href="{{ .url }}">
+                    <p>{{ .name | upper }}</p>
+                </a>
+                <p>{{ .title }}</p>
+                <p>Область научных интересов:<br>{{ .area }}</p>
+            </div>
+        </div>
+        {{ $counter = add $counter 1 }}
+    {{ end }}
+{{ end }}
+</div>
+
+{{ end }}

@@ -1,0 +1,105 @@
+baseURL = "http://examplesite.org"
+defaultContentLanguage = "ru"
+theme = "mytheme"
+
+[params.preloader]
+enable = true
+preloader = "" # use .png , .svg or .gif image
+
+[params.contacts.map]
+yandex = false
+
+[languages]
+    [languages.ru]
+	    languageName = "Russian"
+        title = "Лаборатория гиперзвуковой аэродинамики"
+	    weight = 1
+        copyright = "© Лаборатория гиперзвуковой аэродинамики, 2021"
+
+[menu]
+    [[menu.main]]
+        identifier = "info"
+        name = "Информация"
+        url = "/"
+        weight = 100
+
+    [[menu.main]]
+        identifier = "about"
+        name = "О лаборатории"
+        url = "/about/"
+        weight = 200
+
+    [[menu.main]]
+        parent = "about"
+        identifier = "personnel"
+        name = "Сотрудники"
+        url = "/about/personnel/"
+        weight = 100
+
+    [[menu.main]]
+        parent = "about"
+        identifier = "projects"
+        name = "Проекты"
+        url = "/about/projects/"
+        weight = 200
+
+    [[menu.main]]
+        parent = "about"
+        identifier = "results"
+        name = "Результаты"
+        url = "/about/results/"
+        weight = 300
+
+    [[menu.main]]
+        parent = "about"
+        identifier = "history"
+        name = "История"
+        url = "/about/history/"
+        weight = 400
+
+    [[menu.main]]
+        identifier = "directions"
+        name = "Направления"
+        url = "/directions/"
+        weight = 300
+
+    [[menu.main]]
+        identifier = "devices"
+        name = "Установки"
+        url = "/devices/"
+        weight = 400
+
+    [[menu.main]]
+        parent = "devices"
+        name = "Гиперзвуковая аэродинамическая установка"
+        url = "/devices/device-gau/"
+        weight = 100
+
+    [[menu.main]]
+        parent = "devices"
+        name = "Сверхзвуковая аэродинамическая установка A-3"
+        url = "/devices/device-a3/"
+        weight = 200
+
+    [[menu.main]]
+        parent = "devices"
+        name = "Сверхзвуковая аэродинамическая установка А-11"
+        url = "/devices/device-a11/"
+        weight = 300
+
+    [[menu.main]]
+        parent = "devices"
+        name = "Сверхзвуковая аэродинамическая установка AP-2"
+        url = "/devices/device-ap2/"
+        weight = 400
+
+    [[menu.main]]
+        identifier = "contacts"
+        name = "Контакты"
+        url = "/contacts/"
+        weight = 500
+
+    [[menu.footer]]
+        name = "Контакты"
+        URL = "/contacts/"
+        weight = 500

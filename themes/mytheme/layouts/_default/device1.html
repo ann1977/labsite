@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+{{ $currentPage := . }}
+
+<div class="container pb-5">
+    <div class="row pt-4">
+        <div class="col">
+            <div class="device-post">
+                {{ .Content }}
+            </div>            
+
+            {{ with .Params.schema }}
+                {{ $image := $currentPage.Resources.GetMatch . }}
+                {{ if $currentPage.Params.legend }}
+                    <a href="#legend-popup" class="legend-popup-link">
+                {{ end }}
+                    <img src="{{ $image.RelPermalink }}" class="img-fluid pb-5" alt="{{ $currentPage.Title }}">
+                {{ if $currentPage.Params.legend }}
+                    </a>
+                {{ end }}
+            {{ end }}
+        
+            <div id="legend-popup" class="schema-popup mfp-hide">
+                {{ with .Params.schema }}
+                    {{ $image := $currentPage.Resources.GetMatch . }}
+                    <img src="{{ $image.RelPermalink }}" class="img-fluid pb-4" alt="{{ $currentPage.Title }}">
+                {{ end }}
+                {{ with .Params.legend }}
+                    {{ with $.Resources.GetMatch . }}{{ .Content }}{{ end }}
+                {{ end }}
+            </div>
+
+            <div class="zoom-gallery">
+                {{ range .Params.images }}
+                    {{ $thumbnail := $currentPage.Resources.GetMatch .thumbnail }}
+                    {{ $original := $currentPage.Resources.GetMatch .original }}
+                    <a href="{{ $original.RelPermalink }}">
+                        <img src="{{ $thumbnail.RelPermalink }}" class="img-fluid shadow rounded mb-1">
+                    </a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ end }}

@@ -1,0 +1,14 @@
+// Fonts 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+
+body {
+    line-height: 1.5;
+    font-family: $primary-font;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: normal;
+}

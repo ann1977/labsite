@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+<div class="container pb-5">
+    <div class="row">
+        <div class="col">
+
+            {{ $counter := 1 }}
+            {{ range .Pages.ByWeight }}
+                
+                {{ if ne $counter 1 }}
+                    <hr class="divider">
+                {{ end }}
+
+                {{ $currentPage := . }}
+
+                <h2>{{ .Title | upper }}</h2>
+                {{ with .Params.schema }}
+                    {{ $image := $currentPage.Resources.GetMatch . }}
+                    {{ if $currentPage.Params.legend }}
+                    <a href="{{ $currentPage.RelPermalink }}" class="ajax-popup-link">
+                    {{ end }}
+                        <img src="{{ $image.RelPermalink }}" class="img-fluid pb-4" alt="{{ $currentPage.Title }}">
+                    {{ if $currentPage.Params.legend }}
+                    </a>
+                    {{ end }}
+                {{ end }}
+                <div class="device-post">
+                    {{ .Content }}
+                </div>
+
+                <div class="zoom-gallery justify-content-start">
+                    {{ $thumbCounter := 1 }}
+                    {{ range .Params.images }}
+                        {{ $thumbnail := $currentPage.Resources.GetMatch .thumbnail }}
+                        {{ $original := $currentPage.Resources.GetMatch .original }}
+                        <a href="{{ $original.RelPermalink }}">
+                            <img src="{{ $thumbnail.RelPermalink }}" class="img-fluid shadow rounded mb-1">
+                        </a>
+                        {{ $thumbCounter = add $thumbCounter 1 }}
+                    {{ end }}
+                </div>
+
+                {{ $counter = add $counter 1 }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+{{ end }}
