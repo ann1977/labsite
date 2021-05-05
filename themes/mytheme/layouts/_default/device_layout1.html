@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+{{ $currentPage := . }}
+
+<div class="row pt-4">
+    <div class="col-lg-6">
+        <div class="device-post">
+            {{ .Content }}
+        </div>            
+    </div>
+
+    <div class="col-lg-6">
+        {{ with .Params.schema }}
+            {{ $image := $currentPage.Resources.GetMatch . }}
+            {{ if $currentPage.Params.legend }}
+                <a href="#legend-popup" class="legend-popup-link">
+            {{ end }}
+                <img src="{{ $image.RelPermalink }}" class="img-fluid pb-3" alt="{{ $currentPage.Title }}">
+            {{ if $currentPage.Params.legend }}
+                </a>
+            {{ end }}
+        {{ end }}
+    
+        <div id="legend-popup" class="schema-layout1 mfp-hide">
+            {{ with .Params.schema }}
+                {{ $image := $currentPage.Resources.GetMatch . }}
+                <img src="{{ $image.RelPermalink }}" class="img-fluid pb-3" alt="{{ $currentPage.Title }}">
+            {{ end }}
+            {{ with .Params.legend }}
+                {{ with $.Resources.GetMatch . }}{{ .Content }}{{ end }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+{{ with .Params.images }}
+<hr class="divider">
+<div class="device-gallery">
+    {{ $counter := 1 }}
+    {{ range . }}
+        {{- $thumbnail := $currentPage.Resources.GetMatch .thumbnail -}}
+        {{- $original := $currentPage.Resources.GetMatch .original -}}
+        <a href="{{ $original.RelPermalink }}" class="p-0"><img src="{{ $thumbnail.RelPermalink }}" class="img-thumbnail shadow rounded m-1{{ if gt $counter 5 }} d-none{{ end }}"></a>
+        {{- $counter = add $counter 1 -}}
+    {{ end }}
+</div>
+{{ end }}
+
+{{ end }}

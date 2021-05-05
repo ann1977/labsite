@@ -19,7 +19,7 @@ yandex = false
 [menu]
     [[menu.main]]
         identifier = "info"
-        name = "Информация"
+        name = "Главная"
         url = "/"
         weight = 100
 
@@ -71,27 +71,39 @@ yandex = false
 
     [[menu.main]]
         parent = "devices"
-        name = "Гиперзвуковая аэродинамическая установка"
+        name = "ГАУ"
         url = "/devices/device-gau/"
         weight = 100
 
     [[menu.main]]
         parent = "devices"
-        name = "Сверхзвуковая аэродинамическая установка A-3"
+        name = "Установка A-3"
         url = "/devices/device-a3/"
         weight = 200
 
     [[menu.main]]
         parent = "devices"
-        name = "Сверхзвуковая аэродинамическая установка А-11"
+        name = "Установка А-11"
         url = "/devices/device-a11/"
         weight = 300
 
     [[menu.main]]
         parent = "devices"
-        name = "Сверхзвуковая аэродинамическая установка AP-2"
+        name = "Установка AP-2"
         url = "/devices/device-ap2/"
         weight = 400
+
+    [[menu.main]]
+        parent = "devices"
+        name = "МАУ-Сименс"
+        url = "/devices/device-mau/"
+        weight = 500
+
+    [[menu.main]]
+        parent = "devices"
+        name = "Вакуумная емкость"
+        url = "/devices/device-vac/"
+        weight = 600
 
     [[menu.main]]
         identifier = "contacts"

@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+{{ $currentPage := . }}
+
+{{ $counter := 1 }}
+{{ range sort (.Resources.Match "*.md") "Params.weight" }}
+    {{ if ne $counter 1 }}
+    <hr class="divider">
+    {{ end }}
+    <div class="row">
+        <div class="col-lg-6">
+            {{ .Content }}
+        </div>
+        {{ with .Params.gallery }}
+        <div class="col-lg-6 direction-gallery" data-slick='{"dots": {{ if gt (len .) 1 }}true{{ else }}false{{ end }}}'>
+            {{ range . }}
+            <figure class="figure">
+                {{ $image := $currentPage.Resources.GetMatch .image }}
+                <div>
+                    <img data-lazy="{{ $image.RelPermalink}}" class="figure-img img-fluid mx-auto d-block" alt="">
+                    {{ with .caption }}
+                    <figcaption class="figure-caption text-center">{{ . }}</figcaption>
+                    {{ end }}
+                </div>
+            </figure>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+{{ $counter = add $counter 1}}
+{{ end }}
+
+{{ end }}

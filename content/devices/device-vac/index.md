@@ -1,0 +1,21 @@
+---
+title: "Вакуумная емкость"
+description: "this is meta description"
+layout: "device_layout1"
+schema: images/schema.jpg
+legend: images/schema.md
+images:
+  - thumbnail: images/image01_t.jpg
+    original: images/image01.jpg
+  - thumbnail: images/image02_t.jpg
+    original: images/image02.jpg
+---
+
+# ТИП УСТАНОВКИ
+Вакуумная емкость с системой вакуумных насосов.
+
+# НАЗНАЧЕНИЕ УСТАНОВКИ
+Исследование истечения различных газов в условиях ближнего космоса. Отработка ракетных управляющих двигателей космических аппаратов. Обеспечение работы системы отсоса газа с поверхностей моделей, устанавливаемых в рабочих частях сверхзвуковых установок ГАУ, А-3.
+
+# ПАРАМЕТРЫ УСТАНОВКИ
+Общая емкость 70&nbsp;м{{< sup 3 >}}. Разрежение до 10&nbsp;{{< sup -2 >}}&nbsp;мм&nbsp;рт.&nbsp;ст. Имитация высоты полета Н&nbsp;=&nbsp;0&nbsp;–&nbsp;90&nbsp;км.

@@ -2,10 +2,21 @@
     font: inherit;
 }
 
-.schema-popup {
+.schema-layout1 {
     position: relative;
     background: #FFF;
-    padding: 20px;
+    padding: 30px;
+    width: auto;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.schema-layout2 {
+    position: relative;
+    background: #FFF;
+    padding: 30px;
+    width: auto;
+    max-width: 1000px;
     margin: 20px auto;
 }
 

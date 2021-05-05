@@ -1,5 +1,5 @@
 ---
-title: "Лаборатория"
-extended: "Актуальная информация"
+title: "Главная"
+extended: "Лаборатория гиперзвуковой аэродинамики"
 description: "this is meta description"
 ---

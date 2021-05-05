@@ -5,21 +5,14 @@ $(window).on('load', function () {
 
 $(document).ready(function () {
 	// Legend Popup init
-	$('.ajax-popup-link').magnificPopup({
-		type: 'ajax',
-		removalDelay: 300,
-		mainClass: 'mfp-fade'
-	});
-
-	// Legend Popup init
 	$('.legend-popup-link').magnificPopup({
 		type: 'inline',
 		removalDelay: 300,
 		mainClass: 'mfp-fade'
 	});
-	
+
 	// Zoom gallery init
-	$('.zoom-gallery').each(function() {
+	$('.device-gallery').each(function () {
 		$(this).magnificPopup({
 			delegate: 'a',
 			type: 'image',
@@ -31,6 +24,28 @@ $(document).ready(function () {
 			closeOnContentClick: false,
 			closeBtnInside: false,
 			preload: [1, 2]
+		});
+	});
+
+	// Directions images
+	$('.direction-gallery').each(function () {
+		$(this).slick({
+			autoplay: true,
+			slidesToShow: 2,
+			adaptiveHeight: false,
+			lazyLoad: 'ondemand',
+			autoplaySpeed: 5000,
+			arrows: false,
+			responsive: [
+				{
+					breakpoint: 720,
+					settings: {
+						centerMode: true,
+						slidesToShow: 1,
+						centerPadding: '40px'
+					}
+				}
+			]
 		});
 	});
 });

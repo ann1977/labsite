@@ -4,7 +4,7 @@
             <div class="footer-menu">
                 <ul>
                     {{ range .Site.Menus.footer }}
-                    <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+                    <!-- <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li> -->
                     {{ end }}
                 </ul>
             </div>
@@ -19,6 +19,9 @@
 
 <!-- Magnific Popup core JS file -->
 <script src="/js/jquery.magnific-popup.min.js"></script>
+
+<!-- Slick -->
+<script type="text/javascript" src="/js/slick.min.js"></script>
 
 <!-- Main script -->
 {{ $script := resources.Get "js/script.js" | minify }}
