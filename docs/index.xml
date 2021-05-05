@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Главная on Лаборатория гиперзвуковой аэродинамики</title>
-    <link>http://examplesite.org/</link>
+    <link>https://ann1977.github.io/labsite/</link>
     <description>Recent content in Главная on Лаборатория гиперзвуковой аэродинамики</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>© Лаборатория гиперзвуковой аэродинамики, 2021</copyright><atom:link href="http://examplesite.org/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© Лаборатория гиперзвуковой аэродинамики, 2021</copyright><atom:link href="https://ann1977.github.io/labsite/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Вакуумная емкость</title>
-      <link>http://examplesite.org/devices/device-vac/</link>
+      <link>https://ann1977.github.io/labsite/devices/device-vac/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://examplesite.org/devices/device-vac/</guid>
+      <guid>https://ann1977.github.io/labsite/devices/device-vac/</guid>
       <description>ТИП УСТАНОВКИ Вакуумная емкость с системой вакуумных насосов.
 НАЗНАЧЕНИЕ УСТАНОВКИ Исследование истечения различных газов в условиях ближнего космоса. Отработка ракетных управляющих двигателей космических аппаратов. Обеспечение работы системы отсоса газа с поверхностей моделей, устанавливаемых в рабочих частях сверхзвуковых установок ГАУ, А-3.
 ПАРАМЕТРЫ УСТАНОВКИ Общая емкость 70 м3. Разрежение до 10 -2 мм рт. ст. Имитация высоты полета Н = 0 – 90 км.</description>
@@ -19,10 +19,10 @@
     
     <item>
       <title>Гиперзвуковая аэродинамическая установка</title>
-      <link>http://examplesite.org/devices/device-gau/</link>
+      <link>https://ann1977.github.io/labsite/devices/device-gau/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://examplesite.org/devices/device-gau/</guid>
+      <guid>https://ann1977.github.io/labsite/devices/device-gau/</guid>
       <description>ТИП УСТАНОВКИ Аэродинамическая сверхзвуковая труба периодического действия, баллонного типа с подогревателем.
 НАЗНАЧЕНИЕ УСТАНОВКИ Исследование аэродинамических сил, распределения давления, теплообмена, процессов горения на поверхности сверхзвуковых летательных аппаратов. Фундаментальные исследования физических особенностей пространственных течений с теплообменом и химическими реакциями вблизи поверхности летательных аппаратов сложной формы.
 ПАРАМЕТРЫ УСТАНОВКИ Число Маха M = 5 – 10. Температура торможения T0 = 1300 °K. Полное давление P0 = 20 МПа. Диаметр сопла 200 мм.</description>
@@ -30,28 +30,28 @@
     
     <item>
       <title>История лаборатории</title>
-      <link>http://examplesite.org/about/history/</link>
+      <link>https://ann1977.github.io/labsite/about/history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://examplesite.org/about/history/</guid>
+      <guid>https://ann1977.github.io/labsite/about/history/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Контакты</title>
-      <link>http://examplesite.org/contacts/</link>
+      <link>https://ann1977.github.io/labsite/contacts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://examplesite.org/contacts/</guid>
+      <guid>https://ann1977.github.io/labsite/contacts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Малая дозвуковая аэродинамическая установки МАУ-Сименс</title>
-      <link>http://examplesite.org/devices/device-mau/</link>
+      <link>https://ann1977.github.io/labsite/devices/device-mau/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://examplesite.org/devices/device-mau/</guid>
+      <guid>https://ann1977.github.io/labsite/devices/device-mau/</guid>
       <description>ТИП УСТАНОВКИ Аэродинамическая дозвуковая труба непрерывного действия.
 НАЗНАЧЕНИЕ УСТАНОВКИ Фундаментальные исследования коэффициентов теплоотдачи и сопротивления моделей.
 ПАРАМЕТРЫ УСТАНОВКИ Числа Маха М = 0 – 0,3. Числа Рейнольдса ≤ 8 · 106 м-1. Давление торможения в форкамере P ≤ 0,12 МПа. Температура торможения в форкамере T = 283 ÷ 298 °К. Толщина динамического пограничного слоя в рабочей части – 1,5 – 15 мм. Максимальный расход воздуха G ≤ 1,2 кг/с. Размер рабочей части 1080 × 30 × 300 мм.</description>
@@ -59,47 +59,47 @@
     
     <item>
       <title>Научные направления</title>
-      <link>http://examplesite.org/directions/</link>
+      <link>https://ann1977.github.io/labsite/directions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://examplesite.org/directions/</guid>
+      <guid>https://ann1977.github.io/labsite/directions/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Наши проекты</title>
-      <link>http://examplesite.org/about/projects/</link>
+      <link>https://ann1977.github.io/labsite/about/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://examplesite.org/about/projects/</guid>
+      <guid>https://ann1977.github.io/labsite/about/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Основные результаты</title>
-      <link>http://examplesite.org/about/results/</link>
+      <link>https://ann1977.github.io/labsite/about/results/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://examplesite.org/about/results/</guid>
+      <guid>https://ann1977.github.io/labsite/about/results/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Сверхзвуковая аэродинамическая установка A-3</title>
-      <link>http://examplesite.org/devices/device-a3/</link>
+      <link>https://ann1977.github.io/labsite/devices/device-a3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://examplesite.org/devices/device-a3/</guid>
+      <guid>https://ann1977.github.io/labsite/devices/device-a3/</guid>
       <description>НАЗНАЧЕНИЕ УСТАНОВКИ Исследование аэродинамических сил и распределения давления на поверхности сверхзвуковых летательных аппаратов при их входе и полете в атмосфере Земли. Фундаментальные исследования физических особенностей пространственных течений вблизи поверхности летательных аппаратов сложной формы.
 ПАРАМЕТРЫ УСТАНОВКИ Число Маха M = 1,5 – 4. Выходное сечение сопла 200 × 200 мм.</description>
     </item>
     
     <item>
       <title>Сверхзвуковая аэродинамическая установка AP-2 непрерывного действия</title>
-      <link>http://examplesite.org/devices/device-ap2/</link>
+      <link>https://ann1977.github.io/labsite/devices/device-ap2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://examplesite.org/devices/device-ap2/</guid>
+      <guid>https://ann1977.github.io/labsite/devices/device-ap2/</guid>
       <description>ТИП УСТАНОВКИ Аэродинамическая сверхзвуковая труба непрерывного действия.
 НАЗНАЧЕНИЕ УСТАНОВКИ Исследования обтекания моделей сверхзвуковым потоком воздуха при наличии тепло- и массообмена на их поверхностях.
 ПАРАМЕТРЫ УСТАНОВКИ Число Маха M = 1,7 – 3,5. Числа Рейнольдса 3 · 107 – 8 · 107 м-1. Давление торможения в форкамере P ≤ 0,7 МПа. Давление подачи вторичного воздуха Р ≤ 20 МПа. Температура торможения в форкамере T = 283 ÷ 298 °К. Толщина пограничного слоя на срезе сопла 6 мм.</description>
@@ -107,10 +107,10 @@
     
     <item>
       <title>Сверхзвуковая аэродинамическая установка А-11</title>
-      <link>http://examplesite.org/devices/device-a11/</link>
+      <link>https://ann1977.github.io/labsite/devices/device-a11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://examplesite.org/devices/device-a11/</guid>
+      <guid>https://ann1977.github.io/labsite/devices/device-a11/</guid>
       <description>ТИП УСТАНОВКИ Аэродинамическая сверхзвуковая труба периодического действия баллонного типа.
 НАЗНАЧЕНИЕ УСТАНОВКИ Фундаментальные исследования особенностей обтекания сверхзвуковым потоком газа тел сложной формы. Исследование распределения давления на поверхности моделей летательных аппаратов.
 ПАРАМЕТРЫ УСТАНОВКИ Число Маха M = 0 – 0.8 и 1.5 – 3. Числа Рейнольдса 2.5 · 106 – 1.6 · 107 м-1 и 2.5 · 107 – 6.5 * 107 м-1. Давление торможения P = 0,8 МПа. Размер выходного сечения сопла 250 × 250 мм.</description>
@@ -118,10 +118,10 @@
     
     <item>
       <title>Сотрудники</title>
-      <link>http://examplesite.org/about/personnel/</link>
+      <link>https://ann1977.github.io/labsite/about/personnel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://examplesite.org/about/personnel/</guid>
+      <guid>https://ann1977.github.io/labsite/about/personnel/</guid>
       <description></description>
     </item>
     

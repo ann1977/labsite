@@ -1,4 +1,4 @@
-baseURL = "http://examplesite.org"
+baseURL = "https://ann1977.github.io/labsite"
 defaultContentLanguage = "ru"
 theme = "mytheme"
 
@@ -9,6 +9,9 @@ preloader = "" # use .png , .svg or .gif image
 [params.contacts.map]
 yandex = false
 
+[params]
+logo = "images/logo.png"
+
 [languages]
     [languages.ru]
 	    languageName = "Russian"
@@ -18,100 +21,100 @@ yandex = false
 
 [menu]
     [[menu.main]]
-        identifier = "info"
+        identifier = "home"
         name = "Главная"
-        url = "/"
+        url = ""
         weight = 100
 
     [[menu.main]]
         identifier = "about"
         name = "О лаборатории"
-        url = "/about/"
+        url = "about"
         weight = 200
 
     [[menu.main]]
         parent = "about"
         identifier = "personnel"
         name = "Сотрудники"
-        url = "/about/personnel/"
+        url = "about/personnel"
         weight = 100
 
     [[menu.main]]
         parent = "about"
         identifier = "projects"
         name = "Проекты"
-        url = "/about/projects/"
+        url = "about/projects"
         weight = 200
 
     [[menu.main]]
         parent = "about"
         identifier = "results"
         name = "Результаты"
-        url = "/about/results/"
+        url = "about/results"
         weight = 300
 
     [[menu.main]]
         parent = "about"
         identifier = "history"
         name = "История"
-        url = "/about/history/"
+        url = "about/history"
         weight = 400
 
     [[menu.main]]
         identifier = "directions"
         name = "Направления"
-        url = "/directions/"
+        url = "directions"
         weight = 300
 
     [[menu.main]]
         identifier = "devices"
         name = "Установки"
-        url = "/devices/"
+        url = "devices"
         weight = 400
 
     [[menu.main]]
         parent = "devices"
         name = "ГАУ"
-        url = "/devices/device-gau/"
+        url = "devices/device-gau"
         weight = 100
 
     [[menu.main]]
         parent = "devices"
         name = "Установка A-3"
-        url = "/devices/device-a3/"
+        url = "devices/device-a3"
         weight = 200
 
     [[menu.main]]
         parent = "devices"
         name = "Установка А-11"
-        url = "/devices/device-a11/"
+        url = "devices/device-a11"
         weight = 300
 
     [[menu.main]]
         parent = "devices"
         name = "Установка AP-2"
-        url = "/devices/device-ap2/"
+        url = "devices/device-ap2"
         weight = 400
 
     [[menu.main]]
         parent = "devices"
         name = "МАУ-Сименс"
-        url = "/devices/device-mau/"
+        url = "devices/device-mau"
         weight = 500
 
     [[menu.main]]
         parent = "devices"
         name = "Вакуумная емкость"
-        url = "/devices/device-vac/"
+        url = "devices/device-vac"
         weight = 600
 
     [[menu.main]]
         identifier = "contacts"
         name = "Контакты"
-        url = "/contacts/"
+        url = "contacts"
         weight = 500
 
     [[menu.footer]]
         name = "Контакты"
-        URL = "/contacts/"
+        URL = "contacts"
         weight = 500
