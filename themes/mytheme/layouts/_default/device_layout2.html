@@ -13,11 +13,11 @@
         {{ with .Params.schema }}
             {{ $image := $currentPage.Resources.GetMatch . }}
             {{ if $currentPage.Params.legend }}
-                <a href="#legend-popup" class="legend-popup-link">
+                <button type="button" class="btn btn-link shadow-none" data-toggle="modal" data-target="#legend-modal">
             {{ end }}
                 <img src="{{ $image.RelPermalink }}" class="img-fluid pb-3" alt="{{ $currentPage.Title }}">
             {{ if $currentPage.Params.legend }}
-                </a>
+                </button>
             {{ end }}
         {{ end }}
     </div>
@@ -37,14 +37,30 @@
     </div>
     {{ end }}
 
-    <div id="legend-popup" class="schema-layout2 mfp-hide">
-        {{ with .Params.schema }}
-            {{ $image := $currentPage.Resources.GetMatch . }}
-            <img src="{{ $image.RelPermalink }}" class="img-fluid pb-3" alt="{{ $currentPage.Title }}">
-        {{ end }}
-        {{ with .Params.legend }}
-            {{ with $.Resources.GetMatch . }}{{ .Content }}{{ end }}
-        {{ end }}
+    <!-- Modal -->
+    <div class="modal fade" id="legend-modal" tabindex="-1" aria-labelledby="#legend-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="#legend-modal-label">{{ $currentPage.Title }}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-left">
+                    {{ with .Params.schema }}
+                    {{ $image := $currentPage.Resources.GetMatch . }}
+                    <img src="{{ $image.RelPermalink }}" class="img-fluid pb-3" alt="{{ $currentPage.Title }}">
+                    {{ end }}
+                    {{ with .Params.legend }}
+                        {{ with $.Resources.GetMatch . }}{{ .Content }}{{ end }}
+                    {{ end }}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

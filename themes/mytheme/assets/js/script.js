@@ -4,13 +4,6 @@ $(window).on('load', function () {
 });
 
 $(document).ready(function () {
-	// Legend Popup init
-	$('.legend-popup-link').magnificPopup({
-		type: 'inline',
-		removalDelay: 300,
-		mainClass: 'mfp-fade'
-	});
-
 	// Zoom gallery init
 	$('.device-gallery').each(function () {
 		$(this).magnificPopup({

@@ -11,7 +11,7 @@
 
     <!-- Main stylesheet -->
     
-    <link rel="stylesheet" href="/labsite/scss/style.min.3da5c1d0a84cf5c7cfaf30fd82e0c770c9e0dfc902a98ef0b5b98be164a8cd4e.css" media="screen">
+    <link rel="stylesheet" href="/labsite/scss/style.min.3b43ff23c2d2e8af6d17dd6199e1eac3c3ed86a8741111f2f55136467ec95717.css" media="screen">
 </head><body>
 <!-- preloader start -->
 <div class="preloader">
@@ -121,23 +121,37 @@
 
     <div class="col-lg-6">
         
-            
-            
-                <a href="#legend-popup" class="legend-popup-link">
-            
-                <img src="/labsite/devices/device-mau/images/schema.jpg" class="img-fluid pb-3" alt="Малая дозвуковая аэродинамическая установки МАУ-Сименс">
-            
-                </a>
-            
+            <div class="row">
+                <div class="col-12">
+                    
+                    
+                        <button type="button" class="btn btn-link shadow-none" data-toggle="modal" data-target="#legend-modal">
+                    
+                        <img src="/labsite/devices/device-mau/images/schema.jpg" class="img-fluid pb-3" alt="Малая дозвуковая аэродинамическая установки МАУ-Сименс">
+                    
+                        </button>
+                    
+                </div>
+            </div>
         
     
-        <div id="legend-popup" class="schema-layout1 mfp-hide">
-            
-                
-                <img src="/labsite/devices/device-mau/images/schema.jpg" class="img-fluid pb-3" alt="Малая дозвуковая аэродинамическая установки МАУ-Сименс">
-            
-            
-                <ol>
+        
+        <div class="modal fade" id="legend-modal" tabindex="-1" aria-labelledby="#legend-modal-label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="#legend-modal-label">Малая дозвуковая аэродинамическая установки МАУ-Сименс</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-left">
+                        
+                        
+                        <img src="/labsite/devices/device-mau/images/schema.jpg" class="img-fluid pb-3" alt="Малая дозвуковая аэродинамическая установки МАУ-Сименс">
+                        
+                        
+                            <ol>
 <li>Частотный преобразователь</li>
 <li>Высоконапорный центробежный вентилятор</li>
 <li>Мягкий соединительный рукав</li>
@@ -152,7 +166,13 @@
 <li>Иллюминатор из оптического стекла</li>
 </ol>
 
-            
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
