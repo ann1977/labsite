@@ -26,13 +26,13 @@
     <div class="col-12">
         <hr class="divider">        
         <div class="device-gallery">
-            {{ $counter := 1 }}
-            {{ range . }}
+            {{- $counter := 1 -}}
+            {{- range . -}}
                 {{- $thumbnail := $currentPage.Resources.GetMatch .thumbnail -}}
                 {{- $original := $currentPage.Resources.GetMatch .original -}}
                 <a href="{{ $original.RelPermalink }}" class="p-0"><img src="{{ $thumbnail.RelPermalink }}" class="img-thumbnail shadow rounded m-1{{ if gt $counter 5 }} d-none{{ end }}"></a>
                 {{- $counter = add $counter 1 -}}
-            {{ end }}
+            {{- end -}}
         </div>
     </div>
     {{ end }}

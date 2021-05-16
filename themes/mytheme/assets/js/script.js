@@ -48,4 +48,23 @@ $(document).ready(function () {
 			]
 		});
 	});
+
+	// Zoom gallery init
+	$('.history-gallery').each(function () {
+		$(this).magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			gallery: {
+				enabled: true
+			},
+			removalDelay: 300,
+			mainClass: 'mfp-fade mfp-huge-captions',
+			closeOnContentClick: false,
+			closeBtnInside: false,
+			preload: [1, 2],
+			image: {
+				verticalFit: true
+			}
+		});
+	});
 });

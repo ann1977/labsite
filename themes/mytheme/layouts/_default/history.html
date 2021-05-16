@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+{{ $currentPage := . }}
+
+<div class="row">
+    {{- with .Params.directors -}}
+    {{- range . -}}
+    <div class="col-md text-center pt-2">
+        <div class="row">
+            <div class="col-sm-12">
+                {{- $image := $currentPage.Resources.GetMatch .image -}}
+                <img src="{{ $image.RelPermalink}}" class="img-fluid rounded-circle shadow" alt="{{ .name }}">
+            </div>
+            <div class="col-sm-12 text-center pt-2">
+                <p>{{ .lname | upper }} {{ .fname | upper }}<br>Заведующий лаборатории<br>{{ .dates }}</p>                
+            </div>
+        </div>
+    </div>
+    {{- end -}}
+    {{- end -}}        
+</div>
+
+<hr class="divider">
+
+<div class="row">
+    <div class="col-12">
+    {{ .Content }}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        {{ with .Params.images }}
+        <div class="history-gallery">
+            {{- range . -}}
+                {{- $thumbnail := $currentPage.Resources.GetMatch .thumbnail -}}
+                {{- $original := $currentPage.Resources.GetMatch .original -}}
+                <a title="<small>{{ .title }}</small>" href="{{ $original.RelPermalink }}" class="p-0"><img src="{{ $thumbnail.RelPermalink }}" class="img-history"></a>
+            {{- end -}}
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+{{ end }}
