@@ -1,0 +1,34 @@
+{{ define "main" }}
+
+{{ $counter := 1 }}
+{{ range .Params.results }}
+    {{ if ne $counter 1 }}
+    <hr class="divider">
+    {{ end }}
+
+    {{ with .title }}
+        <h1>{{ . }}</h1>
+    {{ end }}
+    <div class="row">
+        <div class="col-12">
+        {{ with .content }}
+            {{ with $.Resources.GetMatch . }}{{ .Content }}{{ end }}
+        {{ end }}
+        </div>
+        {{ with .articles }}
+        <div class="col-12">
+            <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#articles{{ $counter }}" aria-expanded="false" aria-controls="articles{{ $counter }}">
+                Статьи
+            </button>
+            <div class="collapse" id="articles{{ $counter }}">
+                <div class="card card-body">
+                {{ with $.Resources.GetMatch . }}{{ .Content }}{{ end }}
+                </div>
+            </div>        
+        </div>
+        {{ end }}
+    </div>
+    {{ $counter = add $counter 1 }}
+{{ end }}
+
+{{ end }}

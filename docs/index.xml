@@ -68,15 +68,6 @@
     </item>
     
     <item>
-      <title>Наши проекты</title>
-      <link>https://ann1977.github.io/labsite/about/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ann1977.github.io/labsite/about/projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Основные результаты</title>
       <link>https://ann1977.github.io/labsite/about/results/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -124,6 +115,15 @@
       
       <guid>https://ann1977.github.io/labsite/about/personnel/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Учебная работа</title>
+      <link>https://ann1977.github.io/labsite/about/academic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ann1977.github.io/labsite/about/academic/</guid>
+      <description>Сотрудники лаборатории читают специальные курсы и руководят научной работой студентов и аспирантов механико-математического факультета МГУ и факультета «Энергомашиностроения» МГТУ. На установках А-3 и ГАУ проводится специальный практикум «Взаимодействие ударных волн с турбулентным пограничным слоем в конических течениях» для студентов 4-го курса механико-математического ф-та, обучающихся на кафедрах: «Гидромеханика», «Волновая и газовая динамика», «Аэромеханика и газовая динамика». На установке А-11 проводится общий практикум для студентов 3 курса механико-математического факультета МГУ («Определение скорости сверхзвукового потока»), спецпрактикум для студентов 4 курса механико-математического факультета МГУ («Исследование тепломассообмена в сверхзвуковом пограничном слое на проницаемой пластине»).</description>
     </item>
     
   </channel>

@@ -41,16 +41,16 @@ logo = "images/logo.png"
 
     [[menu.main]]
         parent = "about"
-        identifier = "projects"
-        name = "Проекты"
-        url = "about/projects"
+        identifier = "results"
+        name = "Результаты"
+        url = "about/results"
         weight = 200
 
     [[menu.main]]
         parent = "about"
-        identifier = "results"
-        name = "Результаты"
-        url = "about/results"
+        identifier = "academic"
+        name = "Учебная работа"
+        url = "about/academic"
         weight = 300
 
     [[menu.main]]
