@@ -18,6 +18,11 @@
     color: rgb(99, 94, 121);
 }
 
+.btn-outline-primary:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 .btn-outline-primary:hover {
     background-color: rgb(99, 94, 121) !important;
     border-color: rgb(99, 94, 121) !important;
@@ -26,4 +31,37 @@
 .btn-outline-primary:active {
     background-color: rgb(56, 63, 69) !important;
     border-color: rgb(56, 63, 69) !important;
+}
+
+.btn-primary {
+    border-radius: 0px;
+    font-size: 1em;
+    border-color: rgb(99, 94, 121);
+    background-color: rgb(99, 94, 121);
+    color: white;
+}
+
+.btn-primary:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: rgb(99, 94, 121);
+    background-color: rgb(99, 94, 121);
+}
+
+.btn-primary:hover {
+    background-color: rgb(56, 63, 69) !important;
+    border-color: rgb(56, 63, 69) !important;
+}
+
+.btn-primary:active {
+    background-color: rgb(56, 63, 69) !important;
+    border-color: rgb(56, 63, 69) !important;
+}
+
+.card {
+    border-radius: 0px;
+}
+
+.modal-content {
+    border-radius: 0px;
 }

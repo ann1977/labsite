@@ -1,6 +1,15 @@
-<nav class="navbar navbar-expand-md sticky-top navbar-light bg-light">
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
     <a class="navbar-brand" href="https://www.imec.msu.ru">
-        <img src="{{ .Site.Params.logo | relURL }}" class="img-responsive" width="36" height="48">
+        <div class="row align-items-center">
+            <div class="col-2">
+                <img src="{{ .Site.Params.logo | relURL }}" class="d-inline-block align-top" width="36" height="48">
+            </div>
+            <div class="col-10">
+                {{ if not .IsHome }}
+                {{ .Site.Params.header | safeHTML }}
+                {{ end }}
+            </div>
+        </div>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

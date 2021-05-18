@@ -11,15 +11,21 @@
         <div class="row">
             <div class="col-sm-12">
                 {{- $image := $currentPage.Resources.GetMatch .image -}}
+                {{ with .info }}
                 <button type="button" class="btn btn-link shadow-none" data-toggle="modal" data-target="#director{{- $counter -}}">
+                {{ end }}
                     <img src="{{ $image.RelPermalink}}" class="img-fluid rounded-circle" alt="{{ .name }}">
+                {{ with .info }}
                 </button>
+                {{ end }}
             </div>
             <div class="col-sm-12 text-center pt-2">
                 <p>{{ $name | upper }}<br>Заведующий лаборатории<br>{{ .dates }}</p>
             </div>
             <div class="col-sm-12 text-center">
+                {{ with .info }}
                 <button type="button" class="btn btn-outline-primary shadow-none btn-sm" data-toggle="modal" data-target="#director{{- $counter -}}">Информация</button>
+                {{ end }}
 
                 <!-- Modal -->
                 {{ with .info }}

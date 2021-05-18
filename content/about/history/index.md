@@ -1,6 +1,5 @@
 ---
 title: "История лаборатории"
-description: "this is meta description"
 layout: history
 
 images:

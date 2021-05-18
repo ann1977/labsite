@@ -1,6 +1,5 @@
 ---
 title: "Сотрудники"
-description: "this is meta description"
 layout: "personnel"
 
 personnel:

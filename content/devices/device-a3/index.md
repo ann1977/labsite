@@ -1,6 +1,5 @@
 ---
 title: "Сверхзвуковая аэродинамическая установка A-3"
-description: "this is meta description"
 layout: "device_layout2"
 schema: images/schema.jpg
 legend: images/schema.md

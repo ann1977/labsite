@@ -16,6 +16,7 @@ logo = "images/logo.png"
     [languages.ru]
 	    languageName = "Russian"
         title = "Лаборатория гиперзвуковой аэродинамики"
+        header = "ЛАБОРАТОРИЯ<br>ГИПЕРЗВУКОВОЙ АЭРОДИНАМИКИ"
 	    weight = 1
         copyright = "© Лаборатория гиперзвуковой аэродинамики, 2021"
 
@@ -59,6 +60,13 @@ logo = "images/logo.png"
         name = "История"
         url = "about/history"
         weight = 400
+
+    [[menu.main]]
+        parent = "about"
+        identifier = "termodynamics"
+        name = "Термогазодинамика"
+        url = "about/termodynamics"
+        weight = 500
 
     [[menu.main]]
         identifier = "directions"

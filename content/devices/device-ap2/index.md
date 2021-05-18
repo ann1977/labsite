@@ -1,6 +1,5 @@
 ---
 title: "Сверхзвуковая аэродинамическая установка AP-2 непрерывного действия"
-description: "this is meta description"
 layout: "device_layout1"
 schema: images/schema.jpg
 legend: images/schema.md

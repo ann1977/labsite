@@ -1,7 +1,6 @@
 ---
 title: "Контакты"
 extended: "Напишите нам"
-description: "this is meta description"
 layout: "contacts"
 
 address:

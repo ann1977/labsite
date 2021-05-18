@@ -1,6 +1,5 @@
 ---
 title: "Малая дозвуковая аэродинамическая установки МАУ-Сименс"
-description: "this is meta description"
 layout: "device_layout1"
 schema: images/schema.jpg
 legend: images/schema.md

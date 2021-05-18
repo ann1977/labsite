@@ -1,5 +1,23 @@
-<div class="jumbotron jumbotron-fluid" style="background-image: url('/images/header.jpg');">
+<div class="jumbotron jumbotron-fluid">
     <div class="container container-fluid">
-        <h1 class="display-4 text-center">{{ default .Title .Params.Extended }}</h1>
+        {{ if .IsHome }}
+        <div class="row">
+            <div class="col-12 pb-4">
+                <h1 class="text-center">{{ (default .Title .Params.extended) | safeHTML }}</h1>
+            </div>
+            <div class="col-12">
+                <hr class="divider">
+            </div>
+            <div class="col-12 pt-4">
+                <h2 class="text-center">{{ .Params.subtitle }}</h1>
+            </div>
+            <div class="col-12 text-center pt-4">
+                <a type="button" class="btn btn-primary shadow-none px-5 py-2" href="{{ .Params.link | relLangURL }}">ИНФОРМАЦИЯ</a>
+            </div>
+        </div>
+
+        {{ else }}
+        <h2 class="text-center">{{ default .Title .Params.extended }}</h1>
+        {{ end }}
     </div>
 </div>

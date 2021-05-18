@@ -1,6 +1,5 @@
 ---
 title: "Гиперзвуковая аэродинамическая установка"
-description: "this is meta description"
 layout: "device_layout2"
 schema: images/schema.jpg
 legend: images/schema.md
