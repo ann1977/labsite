@@ -1,0 +1,10 @@
+</div>
+<div class="col-12">
+    <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#articles{{ .Page.Weight }}" aria-expanded="false" aria-controls="articles{{ .Page.Weight }}">
+        Статьи
+    </button>
+    <div class="collapse" id="articles{{ .Page.Weight }}">
+        <div class="card card-body">
+        {{ .Inner | markdownify }}
+        </div>
+    </div>
