@@ -20,7 +20,7 @@
                 {{ end }}
             </div>
             <div class="col-sm-12 text-center pt-2">
-                <p>{{ $name | upper }}<br>Заведующий лаборатории<br>{{ .dates }}</p>
+                <p>{{ $name | upper }}<br>{{ .title }}<br>{{ .dates }}</p>
             </div>
             <div class="col-sm-12 text-center">
                 {{ with .info }}
@@ -59,18 +59,6 @@
     <div class="col-12">
     {{ .Content }}
     </div>
-    {{ with .Params.rewards }}
-    <div class="col-12">
-        <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#rewards" aria-expanded="false" aria-controls="rewards">
-            Награды и достижения
-        </button>
-        <div class="collapse" id="rewards">
-            <div class="card card-body">
-                {{ with $.Resources.GetMatch . }}{{ .Content }}{{ end }}
-            </div>
-        </div>        
-    </div>
-    {{ end }}
 </div>
 
 <hr class="divider">
