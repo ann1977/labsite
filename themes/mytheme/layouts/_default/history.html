@@ -63,18 +63,18 @@
 
 <hr class="divider">
 
-<div class="row">
-    <div class="col-12">
-        {{ with .Params.images }}
-        <div class="history-gallery">
-            {{- range . -}}
-                {{- $thumbnail := $currentPage.Resources.GetMatch .thumbnail -}}
-                {{- $original := $currentPage.Resources.GetMatch .original -}}
-                <a title="{{ .title }}" href="{{ $original.RelPermalink }}" class="p-0"><img src="{{ $thumbnail.RelPermalink }}" class="img-history"></a>
-            {{- end -}}
-        </div>
-        {{ end }}
+<div class="row history-gallery">
+    {{ with .Params.images }}
+    {{- range . -}}
+    <div class="col-lg-2 col-md-3 col-sm-4 col-6 p-1">
+        {{- $thumbnail := $currentPage.Resources.GetMatch .thumbnail -}}
+        {{- $original := $currentPage.Resources.GetMatch .original -}}
+        <a title="{{ .title }}" href="{{ $original.RelPermalink }}">
+            <img class="img-thumbnail shadow" src="{{ $thumbnail.RelPermalink }}" alt="">
+        </a>
     </div>
+    {{- end -}}
+    {{ end }}
 </div>
 
 {{ end }}

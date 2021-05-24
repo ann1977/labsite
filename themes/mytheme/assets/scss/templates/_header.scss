@@ -1,6 +1,8 @@
 .navbar {
     font-weight: 500;
     font-size: 14px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
 
 nav .dropdown-menu {
@@ -9,13 +11,18 @@ nav .dropdown-menu {
 
 .dropdown .dropdown-menu a:hover
 {
-  color: #fff;
-  background-color: rgb(91,94,121);
-  border-color: #fff;
+    color: #fff;
+    background-color: rgb(91,94,121);
+    border-color: #fff;
 }
 
 .navbar .navbar-brand {
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: .1em;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: .1em;
+}
+
+.navbar-hide {
+    pointer-events: none;
+    opacity: 0;
 }

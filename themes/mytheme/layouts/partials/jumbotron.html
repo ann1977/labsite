@@ -9,15 +9,14 @@
                 <hr class="divider">
             </div>
             <div class="col-12 pt-4">
-                <h2 class="text-center">{{ .Params.subtitle }}</h1>
+                <h2 class="text-center">{{ .Params.subtitle }}</h2>
             </div>
             <div class="col-12 text-center pt-4">
                 <a type="button" class="btn btn-primary shadow-none px-5 py-2" href="{{ .Params.link | relLangURL }}">ИНФОРМАЦИЯ</a>
             </div>
         </div>
-
         {{ else }}
-        <h2 class="text-center">{{ default .Title .Params.extended }}</h1>
+        <h2 class="text-center">{{ default .Title .Params.extended }}</h2>
         {{ end }}
     </div>
 </div>

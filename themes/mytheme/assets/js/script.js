@@ -60,4 +60,21 @@ $(document).ready(function () {
 			}
 		});
 	});
+
+	// scroll functions
+	previousScroll = 0;
+	$(window).scroll(function(e) {
+		// add/remove class to navbar when scrolling to hide/show
+		var scroll = $(window).scrollTop();
+		if (scroll < previousScroll) {
+			if (scroll + 10 < previousScroll || scroll < 150) {
+				$('.navbar').removeClass("navbar-hide");
+			}
+		} else if (scroll >= 150) {
+			$('.navbar').addClass("navbar-hide");
+		}
+		previousScroll = scroll;
+	});
 });
+
+

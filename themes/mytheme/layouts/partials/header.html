@@ -4,7 +4,7 @@
             <div class="col-2">
                 <img src="{{ .Site.Params.logo | relURL }}" class="d-inline-block align-top" width="36" height="48">
             </div>
-            <div class="col-10">
+            <div class="col-10 d-none d-sm-block">
                 {{ if not .IsHome }}
                 {{ .Site.Params.header | safeHTML }}
                 {{ end }}

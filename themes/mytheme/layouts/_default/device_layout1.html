@@ -52,13 +52,17 @@
 
 {{ with .Params.images }}
 <hr class="divider">
-<div class="device-gallery">
+<div class="row device-gallery">
     {{- $counter := 1 -}}
     {{- range . -}}
+    <div class="col-lg-2 col-md-3 col-sm-4 col-6 p-1">
         {{- $thumbnail := $currentPage.Resources.GetMatch .thumbnail -}}
         {{- $original := $currentPage.Resources.GetMatch .original -}}
-        <a href="{{ $original.RelPermalink }}" class="p-0"><img src="{{ $thumbnail.RelPermalink }}" class="img-thumbnail shadow rounded m-1{{ if gt $counter 5 }} d-none{{ end }}"></a>
+        <a href="{{ $original.RelPermalink }}">
+            <img class="img-thumbnail shadow" src="{{ $thumbnail.RelPermalink }}">
+        </a>
         {{- $counter = add $counter 1 -}}
+    </div>
     {{- end -}}
 </div>
 {{ end }}

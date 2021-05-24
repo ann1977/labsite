@@ -2,16 +2,33 @@
 
 {{ $currentPage := . }}
 
-<figure class="figure float-left mr-5 mb-0">
-    {{ with .Params.image }}
-    {{ $image := $currentPage.Resources.GetMatch . }}
-    <img class="img-fluid" src="{{ $image.RelPermalink }}">
-    {{ end }}
-    {{ with .Params.caption }}
-    <figcaption class="figure-caption text-center mt-3">{{ . | safeHTML }}</figcaption>
-    {{ end }}
-</figure>
-
-{{ .Content }}
+<div class="row no-gutters">
+    <div class="col-12 d-none d-sm-block">
+        <figure class="figure float-left mr-5">
+            {{ with .Params.image }}
+            {{ $image := $currentPage.Resources.GetMatch . }}
+            <img class="img-fluid" src="{{ $image.RelPermalink }}">
+            {{ end }}
+            {{ with .Params.caption }}
+            <figcaption class="figure-caption text-center mt-3">{{ . | safeHTML }}</figcaption>
+            {{ end }}
+        </figure>
+        {{ .Content }}
+    </div>
+    <div class="col-12 d-block d-sm-none text-center">
+        <figure class="figure">
+            {{ with .Params.image }}
+            {{ $image := $currentPage.Resources.GetMatch . }}
+            <img class="img-fluid" src="{{ $image.RelPermalink }}">
+            {{ end }}
+            {{ with .Params.caption }}
+            <figcaption class="figure-caption text-center mt-3">{{ . | safeHTML }}</figcaption>
+            {{ end }}
+        </figure>
+    </div>
+    <div class="col-12 d-block d-sm-none">
+        {{ .Content }}
+    </div>
+</div>
 
 {{ end }}
