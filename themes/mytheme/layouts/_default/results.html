@@ -1,20 +1,29 @@
 {{ define "main" }}
 
-{{ $counter := 1 }}
-{{ range sort (.Resources.Match "*.md") "Params.weight" }}
-    {{ if ne $counter 1 }}
-    <hr class="divider">
-    {{ end }}
+{{ .Content }}
 
-    {{ with .Title }}
-        <h1>{{ . }}</h1>
-    {{ end }}
-    <div class="row">
+{{ range sort (.Resources.Match "*.md") "Params.weight" }}
+
+    <div class="row pb-3 pt-3">
         <div class="col-12">
-        {{ .Content }}
+            <h1 id="{{ .Params.folder }}">{{ .Title }}</h1>
+            {{ .Content }}
         </div>
+
+        {{ $counter := 1 }}
+
+        {{ range sort ($.Resources.Match (print .Params.folder "/*.md")) "Params.weight" }}
+
+            <div class="col-12">
+                {{ if ne $counter 1 }}
+                <hr class="divider">
+                {{ end }}
+                {{ .Content }}
+            </div>
+
+            {{ $counter = add $counter 1 }}
+        {{ end }}
     </div>
-    {{ $counter = add $counter 1 }}
 {{ end }}
 
 {{ end }}

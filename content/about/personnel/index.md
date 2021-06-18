@@ -5,7 +5,7 @@ layout: "personnel"
 personnel:
   - name: Здитовец Андрей Геннадьевич
     url: https://istina.msu.ru/profile/Zditovets/
-    title: и.о. зав. лаб., к.т.н.
+    title: и.о. зав. лаб., к.т.н., доцент
     area: термодинамика сверхзвуковых потоков, безмашинное энергоразделение
     image: images/zditovets.jpg
   - name: Леонтьев Александр Иванович

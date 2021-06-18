@@ -8,9 +8,9 @@ address:
   - "Москва"
   - "Мичуринский пр., д.1"
 
-email: mail@mail.ru
+email: zditovets@mail.ru
 
-phone: "0124857985320"
+phone: "+7 (495) 939-24-01"
 
 contact: Здитовец Андрей Геннадьевич
 ---
