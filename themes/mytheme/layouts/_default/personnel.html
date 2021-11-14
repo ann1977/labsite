@@ -12,16 +12,26 @@
         <div class="row">
             <div class="col-sm-5 col-md-6 order-md-{{ if eq $pos 1 }}1{{ else }}2{{ end }}">
                 {{- $image := $currentPage.Resources.GetMatch .image -}}
-                <a href="{{ .url }}">
+                {{ with .url }}
+                <a href="{{ . }}">
+                {{ end }}
                     <img src="{{ $image.RelPermalink}}" class="{{ if eq $pos 1 }}float-md-right{{ end }} rounded-circle" alt="{{ .name }}">
+                {{ with .url }}
                 </a>
+                {{ end }}
             </div>
             <div class="col-sm-7 col-md-6 order-md-{{ if eq $pos 1 }}2{{ else }}1 text-md-right{{ end }}">
-                <a href="{{ .url }}">
+                {{ with .url }}
+                <a href="{{ . }}">
+                {{ end }}
                     <p class="pt-2">{{ .name | upper }}</p>
+                {{ with .url }}
                 </a>
+                {{ end }}
                 <p>{{ .title }}</p>
-                <p>Область научных интересов:<br>{{ .area }}</p>
+                {{ with .area }}
+                <p>Область научных интересов:<br>{{ . }}</p>
+                {{ end }}
             </div>
         </div>
         {{ $counter = add $counter 1 }}

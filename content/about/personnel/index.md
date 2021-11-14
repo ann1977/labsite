@@ -48,4 +48,11 @@ personnel:
     title: к.т.н., с.н.с.
     area: термодинамика сверхзвуковых потоков, безмашинное энергоразделение
     image: images/popovich.jpg
+  - name: Чайка Анна Михайловна
+    url: https://istina.msu.ru/profile/ChaikaAM/
+    image: images/woman.jpg
+  - name: Немирова Татьяна Алексеевна
+    image: images/woman.jpg
+  - name: Осипцова Лариса Владимировна
+    image: images/woman.jpg
 ---
