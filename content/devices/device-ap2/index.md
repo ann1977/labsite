@@ -4,10 +4,6 @@ layout: "device_layout1"
 schema: images/schema.jpg
 legend: images/schema.md
 images:
-  - thumbnail: images/image01_t.jpg
-    original: images/image01.jpg
-  - thumbnail: images/image02_t.jpg
-    original: images/image02.jpg
   - thumbnail: images/image03_t.jpg
     original: images/image03.jpg
   - thumbnail: images/image04_t.jpg
