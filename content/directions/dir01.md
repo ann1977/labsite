@@ -1,11 +1,16 @@
 ---
 weight: 100
 gallery:
-    - image: images/dir01_01.jpg
-      caption: "Обтекание осесимметричного тела (М=3, альфа=15)"
-    - image: images/dir01_02.jpg
-    - image: images/dir01_03.jpg
-    - image: images/dir01_04.jpg
+  - thumbnail: images/dir01_01_t.jpg
+    original: images/dir01_01.jpg
+    title: "Обтекание осесимметричного тела (М=3, альфа=15)"
+  - thumbnail: images/dir01_02_t.jpg
+    original: images/dir01_02.jpg
+    title: "Обтекание осесимметричного тела (М=3, альфа=15)"
+  - thumbnail: images/dir01_03_t.jpg
+    original: images/dir01_03.jpg
+  - thumbnail: images/dir01_04_t.jpg
+    original: images/dir01_04.jpg
 ---
 
 Создание алгоритмов и программ расчета сверх- и гиперзвукового обтекания пространственных тел и крыльев в рамках моделей идеального и вязкого газа для изучения их режимов обтекания, ударно-волновых структур и аэродинамических характеристик, а также определения диапазона параметров, где могут быть использованы более простые подходы в рамках модели идеального газа.
