@@ -24,9 +24,15 @@
     </div>
     <div class="col-12 d-block d-sm-none text-center">
         <figure class="figure">
+            {{ with .Params.info }}
+            <button type="button" class="btn btn-link shadow-none" data-toggle="modal" data-target="#director">
+            {{ end }}
             {{ with .Params.image }}
             {{ $image := $currentPage.Resources.GetMatch . }}
             <img class="img-fluid" src="{{ $image.RelPermalink }}">
+            {{ end }}
+            {{ with .Params.info }}
+            </button>
             {{ end }}
             {{ with .Params.caption }}
             <figcaption class="figure-caption text-center mt-3">{{ . | safeHTML }}</figcaption>

@@ -23,10 +23,6 @@
                 <p>{{ $name | upper }}<br>{{ .title }}<br>{{ .dates }}</p>
             </div>
             <div class="col-sm-12 text-center">
-                {{ with .info }}
-                <button type="button" class="btn btn-outline-primary shadow-none btn-sm" data-toggle="modal" data-target="#director{{- $counter -}}">Информация</button>
-                {{ end }}
-
                 <!-- Modal -->
                 {{ with .info }}
                 <div class="modal fade" id="director{{- $counter -}}" tabindex="-1" aria-labelledby="#directorLabel{{- $counter -}}" aria-hidden="true">
