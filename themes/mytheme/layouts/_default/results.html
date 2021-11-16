@@ -2,21 +2,51 @@
 
 {{ .Content }}
 
+{{ $section := 1 }}
+
+{{ $currentPage := . }}
+
 {{ range sort (.Resources.Match "*.md") "Params.weight" }}
 
-    <div class="row pb-3 pt-3">
+    <div class="row pb-3">
+        {{ if ne $section 1 }}
+        <div class="col-12 pb-2">
+            <hr class="solid">
+        </div>
+        {{ end }}
+
+        <div class="col-1">
+            {{ $section }}.
+        </div>
+        <div class="col-11 pb-2">
+            {{ .Title }}
+        </div>
         <div class="col-12">
-            <h1 id="{{ .Params.folder }}">{{ .Title }}</h1>
             {{ .Content }}
         </div>
 
         {{ $counter := 1 }}
+        {{ $folder := .Params.folder }}
 
         {{ range sort ($.Resources.Match (print .Params.folder "/*.md")) "Params.weight" }}
 
+            {{ if ne $counter 1 }}
             <div class="col-12">
-                {{ if ne $counter 1 }}
                 <hr class="divider">
+            </div>
+            {{ end }}
+            <div class="col-1">
+                {{ $section }}.{{ $counter }}.
+            </div>
+            <div class="col-11 pb-2">
+                {{ .Title }}
+            </div>
+            <div class="col-12">
+                {{ with .Params.image }}
+                {{ $image := $currentPage.Resources.GetMatch (print $folder "/" .) }}
+                <figure class="figure float-sm-left mr-4 mt-2">
+                    <img class="img-fluid" src="{{ $image.RelPermalink }}">
+                </figure>
                 {{ end }}
                 {{ .Content }}
             </div>
@@ -24,6 +54,7 @@
             {{ $counter = add $counter 1 }}
         {{ end }}
     </div>
+    {{ $section = add $section 1 }}
 {{ end }}
 
 {{ end }}
