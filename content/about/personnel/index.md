@@ -51,8 +51,13 @@ personnel:
   - name: Чайка Анна Михайловна
     url: https://istina.msu.ru/profile/ChaikaAM/
     image: images/woman.jpg
+  - name: Анохин Михаил Дмитриевич
+    title: ведущий инженер
+    image: images/anohin.jpg
   - name: Немирова Татьяна Алексеевна
-    image: images/woman.jpg
+    title: ведущий инженер
+    image: images/nemirova.jpg
   - name: Осипцова Лариса Владимировна
-    image: images/woman.jpg
+    title: ведущий инженер
+    image: images/osipcova.jpg
 ---

@@ -45,7 +45,7 @@
                 {{ with .Params.image }}
                 {{ $image := $currentPage.Resources.GetMatch (print $folder "/" .) }}
                 <figure class="figure float-sm-left mr-4 mt-2">
-                    <img class="img-fluid" src="{{ $image.RelPermalink }}">
+                    <img class="img-fluid shadow border rounded" src="{{ $image.RelPermalink }}">
                 </figure>
                 {{ end }}
                 {{ .Content }}
