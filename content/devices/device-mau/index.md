@@ -1,5 +1,5 @@
 ---
-title: "Малая дозвуковая аэродинамическая установки МАУ-Сименс"
+title: "Малая дозвуковая аэродинамическая установки МАУ"
 layout: "device_layout1"
 schema: images/schema.jpg
 legend: images/schema.md

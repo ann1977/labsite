@@ -50,7 +50,7 @@ personnel:
     image: images/popovich.jpg
   - name: Чайка Анна Михайловна
     url: https://istina.msu.ru/profile/ChaikaAM/
-    image: images/woman.jpg
+    image: images/chaika.jpg
   - name: Анохин Михаил Дмитриевич
     title: ведущий инженер
     image: images/anohin.jpg

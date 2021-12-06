@@ -106,7 +106,7 @@ logo = "images/logo.png"
 
     [[menu.main]]
         parent = "devices"
-        name = "МАУ-Сименс"
+        name = "МАУ"
         url = "devices/device-mau"
         weight = 500
 
