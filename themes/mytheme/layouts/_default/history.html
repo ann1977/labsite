@@ -13,11 +13,11 @@
                 {{- $image := $currentPage.Resources.GetMatch .image -}}
                 {{ with .info }}
                 <button type="button" class="btn btn-link shadow-none" data-toggle="modal" data-target="#director{{- $counter -}}">
+                {{ else }}
+                <button type="button" class="btn">
                 {{ end }}
                     <img src="{{ $image.RelPermalink}}" class="img-fluid rounded-circle" alt="{{ .name }}">
-                {{ with .info }}
                 </button>
-                {{ end }}
             </div>
             <div class="col-sm-12 text-center pt-2">
                 <p>{{ $name | upper }}<br>{{ .title }}<br>{{ .dates }}</p>
